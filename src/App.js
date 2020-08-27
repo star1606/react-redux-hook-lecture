@@ -12,7 +12,9 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        {/* 10으로 나오고 */}
         <ItemContainer cake />
+        {/* 20으로 나옴 */}
         <ItemContainer />
         <CakeContainer />
         <HooksCakeContainer />
