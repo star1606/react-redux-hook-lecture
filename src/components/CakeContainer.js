@@ -10,6 +10,7 @@ const CakeContainer = (props) => {
   );
 };
 
+// mapStateToProps 이미 props는 갔음
 const mapStateToProps = (state) => {
   return {
     numOfCakes: state.cake.numOfCakes,
