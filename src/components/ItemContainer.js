@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { buyCake } from "./../redux/cakes/cakeActions";
 import { buyIcecream } from "./../redux/icecream/icecreamActions";
+
 function ItemContainer(props) {
   return (
     <div>
@@ -15,7 +16,7 @@ function ItemContainer(props) {
 const mapStateToProps = (state, ownProps) => {
   const itemState = ownProps.cake
     ? state.cake.numOfCakes
-    : state.icecream.numOfCakes;
+    : state.icecream.numOfIcecreams;
 
   return {
     item: itemState,
@@ -33,7 +34,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 
 export default connect(
-  null,
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
+  null
 )(ItemContainer);

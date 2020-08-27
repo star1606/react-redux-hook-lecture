@@ -1,7 +1,7 @@
 import { BUY_ICECREAM } from "./icecreamTypes";
 
 const initialState = {
-  numOfIcecream: 20,
+  numOfIcecreams: 20,
 };
 
 const icecreamReducer = (state = initialState, action) => {
@@ -9,7 +9,7 @@ const icecreamReducer = (state = initialState, action) => {
     case BUY_ICECREAM:
       return {
         ...state,
-        numOfIcecream: state.numOfIcecream - 1,
+        numOfIcecreams: state.numOfIcecreams - 1,
       };
 
     default:

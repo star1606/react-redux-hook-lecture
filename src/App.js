@@ -7,19 +7,22 @@ import HooksCakeContainer from "./components/HooksCakeContainer";
 import IcecreamContainer from "./components/IcecreamContainer";
 import NewCakeContainer from "./components/NewCakeContainer";
 import ItemContainer from "./components/ItemContainer";
+import UserContainer from "./components/UserContainer";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        {/* 10으로 나오고 */}
+        {/*         
         <ItemContainer cake />
-        {/* 20으로 나옴 */}
+      
         <ItemContainer />
         <CakeContainer />
         <HooksCakeContainer />
+
         <IcecreamContainer />
-        <NewCakeContainer />
+        <NewCakeContainer /> */}
+        <UserContainer />
       </div>
     </Provider>
   );
